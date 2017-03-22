@@ -4,18 +4,20 @@ title: chromebook tutorial
 ---
 
 <div class="blurb">
-  <h2>Professional Profile</h2>
+  <h2>Chromebook Tutorial</h2>
   <img src="napa2.jpg"  width="250" align="right">
-<p>
-  Audrey is a New Jersey native pursuing a BA in Applied Statistics and a BS in Managerial Economics at the University of California, Davis. After graduation this June, she hopes to integrate her acquired STEM and business knowledge in the actuarial sciences industry. An <a href="http://www.beanactuary.org/what/">actuary</a>, as she first learned of the career in 2014, is a business professional who analyzes the financial consequences of risk. They use mathematics, computer science, and statistical theory to study uncertain future events, especially those of concern to insurance. Audrey took her first step towards the career path when she passed her first actuarial exam (Exam 1/Probability) in September 2015.
-<br>
-<br>
-  During the summer after her junior year of college, Audrey worked at the headquarters of <a href="https://www.libertymutualgroup.com/about-lm/news/liberty-mutual-insurance-news">Liberty Mutual Insurance</a> in Boston, Massachusetts as an actuarial intern. There, she learned an incredible amount about the career as well as strengthened her technical and analytic problem-solving skills for the Global Specialty Reinsurance Data Science and Actuarial Unit. Upon completing her internship, Audrey was offered a full-time job in Liberty Mutual’s Actuarial Development Program in Boston or Seattle. She is currently deciding between Liberty Mutual and another employer.
-<br>	
-<br>
-  Having returned to Davis to finish her studies, Audrey also returns to her on-campus job as an Admissions Student Assistant at the <a href="http://gsm.ucdavis.edu/">UC Davis Graduate School of Management</a>. There, she works on data and application vetting for MBA, MS Professional Accounting, and MS Business Analytics prospects. Additionally, she is currently studying for her second actuarial exam (Exam 2/Financial Mathematics) and will sit for the exam in February 2017.
-<br>
-<br>
-  In her free time, Audrey enjoys practicing Vinyasa yoga and watching documentaries. She is an avid coffee drinker; actually, she is sort of a coffee addict. She also tries to take advantage of the west coast weather as much as possible.
-</p>
+
+<p>I am making this thread to track my process installing all the necessary applications for STA 141B at UC Davis on a Chromebook to help out anyone who may attempt a similar thing after myself.</p>
+<p>For reference my machine is the Lenovo 100S Chromebook (<a href="http://shop.lenovo.com/us/en/laptops/lenovo/chromebook-series/100s-chromebook/)">http://shop.lenovo.com/us/en/laptops/lenovo/chromebook-series/100s-chromebook/)</a>&nbsp;which was priced just under $200 when it was still being sold.</p>
+<p><span style="text-decoration: underline;">Installing Linux:</span></p>
+<p>The first thing you need to do is install a program called Crouton and override the OS verification so that you can run Linux as well as the Chrome OS. Instructions for that can be found at:&nbsp;<a href="http://www.androidcentral.com/putting-linux-your-chromebook-easier-you-think">http://www.androidcentral.com/putting-linux-your-chromebook-easier-you-think</a>&nbsp;. Part of this installation not detailed in the article is putting the Chromebook into developer mode which is usually done with a physical switch on older machines and by holding 'ESC + Refresh' and tapping the power button on newer laptops but you'll want to double check for your individual model. This does erase any local files so be sure you're ready to do so.</p>
+<p>Then when you have Crouton you'll launch a terminal in chrome with 'Ctrl + Alt + T' and typing 'shell' in the terminal followed by 'sudo startxfce4' to launch into Linux from Chrome.</p>
+<p>Slight note: you will now have to hit 'Ctrl + D' when starting up to confirm that OS verification is off when prompted.</p>
+<p><span style="text-decoration: underline;">Installing Conda/Python/Jupyter:</span></p>
+<p>Follow this link:&nbsp;<a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a>&nbsp;to find the download for Anaconda which will handle installing Python and Jupyter for you. Use the 64 bit Python 2.7 option as the Ubuntu version you have installed with crouton is 64 bit. Run '<span>bash Anaconda2-4.2.0-Linux-x86_64.sh </span><span>' in a terminal to execute the downloaded shell file and it will take a little bit but follow the steps as they come up in terminal and you will have Conda up and running on your machine. You should now be able to launch a Jupyter notebook by typing 'jupyter notebook' and you will see that you can create new notebooks in Python 2.7.</span></p>
+<p><span style="text-decoration: underline;">Installing R:</span></p>
+<p>To be able to work with a project from 141A in your jupyter notebook you can install R with the command: 'conda install -c r r-essentials' which will take a few minutes to download and install everything but then you can also work with R in Jupyter.</p>
+<p>Hopefully this discussion can be used as a reference to a smooth install if anyone else in a future class wants to save a ton of money by working on a Chromebook. I will keep it updated if I run into issues.</p>
+<p>If you have any questions I'd be happy to help and can be reached at thejeremyweidner@gmail.com</p>
+
 </div><!-- /.blurb -->
