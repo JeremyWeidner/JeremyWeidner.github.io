@@ -1,21 +1,7 @@
 ## Welcome to Jeremy Weidner's Github
 
 ### What you are looking at:
-This is my page to eventually display my various projects as I venture into the world of data analytics.
+This is my page to display my various projects as I venture into the world of data analytics.
 
-## This is a guide on how to install linux on a chromebook:
-
-### I will be displaying this here until I get around to giving it a separate page
-
-<p>I am making this thread to track my process installing all the necessary applications for STA 141B at UC Davis on a Chromebook to help out anyone who may attempt a similar thing after myself.</p>
-<p>For reference my machine is the Lenovo 100S Chromebook (<a href="http://shop.lenovo.com/us/en/laptops/lenovo/chromebook-series/100s-chromebook/)">http://shop.lenovo.com/us/en/laptops/lenovo/chromebook-series/100s-chromebook/)</a>&nbsp;which was priced just under $200 when it was still being sold.</p>
-<p><span style="text-decoration: underline;">Installing Linux:</span></p>
-<p>The first thing you need to do is install a program called Crouton and override the OS verification so that you can run Linux as well as the Chrome OS. Instructions for that can be found at:&nbsp;<a href="http://www.androidcentral.com/putting-linux-your-chromebook-easier-you-think">http://www.androidcentral.com/putting-linux-your-chromebook-easier-you-think</a>&nbsp;. Part of this installation not detailed in the article is putting the Chromebook into developer mode which is usually done with a physical switch on older machines and by holding 'ESC + Refresh' and tapping the power button on newer laptops but you'll want to double check for your individual model. This does erase any local files so be sure you're ready to do so.</p>
-<p>Then when you have Crouton you'll launch a terminal in chrome with 'Ctrl + Alt + T' and typing 'shell' in the terminal followed by 'sudo startxfce4' to launch into Linux from Chrome.</p>
-<p>Slight note: you will now have to hit 'Ctrl + D' when starting up to confirm that OS verification is off when prompted.</p>
-<p><span style="text-decoration: underline;">Installing Conda/Python/Jupyter:</span></p>
-<p>Follow this link:&nbsp;<a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a>&nbsp;to find the download for Anaconda which will handle installing Python and Jupyter for you. Use the 64 bit Python 2.7 option as the Ubuntu version you have installed with crouton is 64 bit. Run '<span>bash Anaconda2-4.2.0-Linux-x86_64.sh </span><span>' in a terminal to execute the downloaded shell file and it will take a little bit but follow the steps as they come up in terminal and you will have Conda up and running on your machine. You should now be able to launch a Jupyter notebook by typing 'jupyter notebook' and you will see that you can create new notebooks in Python 2.7.</span></p>
-<p><span style="text-decoration: underline;">Installing R:</span></p>
-<p>To be able to work with a project from 141A in your jupyter notebook you can install R with the command: 'conda install -c r r-essentials' which will take a few minutes to download and install everything but then you can also work with R in Jupyter.</p>
-<p>Hopefully this discussion can be used as a reference to a smooth install if anyone else in a future class wants to save a ton of money by working on a Chromebook. I will keep it updated if I run into issues.</p>
-<p>If you have any questions I'd be happy to help and can be reached at thejeremyweidner@gmail.com</p>
+## About Me:
+Jeremy is a senior at UC Davis studying Statistics and Economics. He is interested in pursuing a career in Data Science.
